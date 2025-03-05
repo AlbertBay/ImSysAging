@@ -9,9 +9,12 @@ from umap import UMAP
 import os
 
 print("Loading data...")
-adata = ad.read_h5ad("scRNA-seqProcessedLabelledObject.h5ad")
+adata = ad.read_h5ad("filtered_scRNA-seq_dataLite.h5ad")
 print("Data loaded:")
 print(adata)
+
+
+
 
 # Check batch_key and layer
 print("Checking if 'sampleName' exists in adata.obs...")
@@ -30,9 +33,9 @@ scvi.model.SCVI.setup_anndata(adata, batch_key="sampleName", layer="RNA_counts")
 print("Data setup complete.")
 
 # Create the model (check for GPU availability)
-use_gpu = scvi.settings.get_gpu()
-print(f"Using GPU: {use_gpu}")
-vae = scvi.model.SCVI(adata, use_gpu=use_gpu)
+# use_gpu = scvi.settings.get_gpu()
+# print(f"Using GPU: {use_gpu}")
+vae = scvi.model.SCVI(adata)
 
 # Train the model
 print("Training scVI model...")
@@ -40,9 +43,7 @@ vae.train()
 print("Training complete.")
 
 # Save the trained model
-model_path = "scVI_trained_model"
-print(f"Saving model to {model_path}...")
-vae.save(model_path, overwrite=True)
+vae.save("vae_model", overwrite=True)
 print("Model saved.")
 
 # Extract latent representation
