@@ -19,19 +19,26 @@ ImSysAging is a project focused on analyzing and improving the aging process of 
 ## Content
 1. Data:
    Contains original scRNA-seq h5ad file + h5ad for each type of embedings
-2. MRVI_no_batch
+   
+2. MRVI_no_batch:
    Contains every experiment with MRVI for cell' embedings, treating cells as from one batch
-3. MRVI_sample_batch
+
+3. MRVI_sample_batch:
    Contains every experiment with MRVI for cell' embedings, each sample is a batch
-4. VAE_no_batch
+
+4. VAE_no_batch:
    Contains every experiment with VAE for cell' embedings, treating cells as from one batch
-5. VAE_sample_batch
+
+5. VAE_sample_batch:
    Contains every experiment with VAE for cell' embedings, each sample is a batch
-6. PCA_sample_batch
+
+6. PCA_sample_batch:
    Harmony batch normalization (sample is a batch) + PCA embedings
-7. data_exploration.ipynb
+
+7. data_exploration.ipynb:
    Original scRNA-seq data overview
-8. train_ageclock.ipynb
+
+8. train_ageclock.ipynb:
    ML models predicting immune age 
 
 ## Contributing
