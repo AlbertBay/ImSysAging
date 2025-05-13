@@ -35,8 +35,11 @@ ImSysAging is a project focused on analyzing and improving the aging process of 
 6. PCA_sample_batch:
    Harmony batch normalization (sample is a batch) + PCA embedings
 
-8. train_ageclock.ipynb:
-   ML models predicting immune age 
+7. train_ageclock.ipynb:
+   ML models predicting immune age
+
+8. go_enrichment_analysis_final.ipynb:
+   GO Enrichment Analysis of T-Cells, B-Cells, NK Cells, and Monocytes using scanpy and gprofiler. Also contains post processing and data-loading methods. 
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for discussion.
