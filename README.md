@@ -35,9 +35,6 @@ ImSysAging is a project focused on analyzing and improving the aging process of 
 6. PCA_sample_batch:
    Harmony batch normalization (sample is a batch) + PCA embedings
 
-7. data_exploration.ipynb:
-   Original scRNA-seq data overview
-
 8. train_ageclock.ipynb:
    ML models predicting immune age 
 
