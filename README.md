@@ -39,7 +39,7 @@ ImSysAging is a project focused on analyzing and improving the aging process of 
    ML models predicting immune age
 
 8. go_enrichment_analysis_final.ipynb:
-   GO Enrichment Analysis of T-Cells, B-Cells, NK Cells, and Monocytes using scanpy and gprofiler. Also contains post processing and data-loading methods. 
+   GO Enrichment Analysis of T-Cells, B-Cells, NK Cells, and Monocytes using scanpy and gprofiler. Also contains data clean-up, pre-processing and data-loading methods. 
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for discussion.
